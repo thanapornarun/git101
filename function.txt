@@ -7,6 +7,7 @@ ReturnType functionName(paramter)
     return .... (ค่าต้องเป็น tpye เดียวกันกับ tpye ของ ReturnType)
 }
 *ฟังก์ชั่นต้องประกาศก่อนเรียกใช้เสมอ* function ต้องอยู่บน main
+
 Ex.
 int addTen(int,x) {
     printf("addTen x = %d\n", x);
