@@ -1,0 +1,34 @@
+"Function"
+return tpye => primitive datatpye, void  (ใช้กับ return;)
+ReturnType functionName(paramter)
+{
+    .
+    .
+    return .... (ค่าต้องเป็น tpye เดียวกันกับ tpye ของ ReturnType)
+}
+*ฟังก์ชั่นต้องประกาศก่อนเรียกใช้เสมอ* function ต้องอยู่บน main
+Ex.
+int addTen(int,x) {
+    printf("addTen x = %d\n", x);
+    x += 10;
+    printf("after added addTen x = %d\n", x);
+    return x;
+}
+// Function Prototype # Link ตัวแปรกับ function
+int name_function()
+int addThirty(int x);
+int addTwenty()
+}
+int main() {
+    int x = 10; (เวลาfunctionทำงาน ค่าที่อยู่นอกfunctionจะไม่เปลื่ยน)
+    int y = addTen(x);
+    printf("In main x = %d, y = %d\n",x ,y); (นำค่าจากfunctionมาใส่แทน)
+}
+int addTwenty() {
+    printf("addTwenty x = %dn", x);
+    x += 20;
+    printf("after added addTwenty x = %d\n", x);
+    return x;
+}
+    #เวลาทำงาน function จะเรียกแค่ตัวแปรในขอบเขคที่คัวเองมี { } *ถ้าไม่มีตัวแปรที่ตัวเองต้องการในขอบเขตของตัวเอง จะไปหาใน gaoble และถ้าไม่มี
+โปรแกรมจะไปหาตัวแปรจากใน { } ที่อยู่ใกล้ที่สุด 

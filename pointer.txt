@@ -1,0 +1,61 @@
+"Pointer"
+
+*a เป็นเครื่องหมายที่บอกว่าตัวแปรนี้คือ pointer ของ a
+
+&a เป็นการเข้าถึง refernce (ค่าที่อยู่) ของตัวแปร
+
+ถ้าเราต้องการ printf เพื่อดูค่าที่อยู่อ้างอิงของตัวแปร สามารถใช้ print("%p",&x);
+
+#inclue <stdio>
+{
+    int a = 100;
+    int b = 0144;
+    int c = 0x64;
+    printf("%d %d %d", a, b, c);
+}
+
+// 100 100 100
+
+#inclue <stdio>
+{
+    int x = 100;
+    printf("%d",x);
+    printf("value of x is %d\n", x);
+    printf("refernce of x is %lu\n", &x);
+    printf(refernce of x is hexadecimal is %p\n",&x);
+}
+
+#inclue <stdio>
+รับด้วย Pointer เปลื่ยนด้วย addres
+
+void addTen (int *x) {
+    *x += 10;
+}
+
+void printString(char *s) {
+    for (char *c = s; *c != '\0'; c++)
+        printf("[%p] = %c\n", c, *c);
+    }
+}
+
+void encrypt(char *s)
+{
+    for (char *c = s; *c != '\0'; c++)
+    {
+        *c += 3;
+    }
+}
+
+int main() {
+    char s[100];
+    scanf("%s",s);
+    printString(s);
+
+    //int x = 10;
+    //addTen(&x);
+    //printf("x = %d\n",x);
+
+    //int x = 100;
+    //printf("value of x = %d\n",x);
+
+}
